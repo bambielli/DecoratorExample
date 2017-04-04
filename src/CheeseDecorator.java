@@ -4,11 +4,10 @@
  */
 
 public class CheeseDecorator extends ToppingDecorator {
-    Pie wrappedPie;
     CheeseType cheeseType;
 
     public CheeseDecorator(Pie wrappedPie, CheeseType cheeseType) {
-        this.wrappedPie = wrappedPie;
+        super(wrappedPie);
         this.cheeseType = cheeseType;
     }
 
